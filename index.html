@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <title>Open Link</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script>
+        function openLink() {
+            var linkUrl = "https://mathhelper.co/shuttle-uv/hvtrs8%2F-dwcidwcigm.aoo%2F"; // Replace with your file name
+            var overlay = document.createElement("div");
+            overlay.className = "overlay";
+            var iframe = document.createElement("iframe");
+            iframe.src = linkUrl;
+            overlay.appendChild(iframe);
+            document.body.appendChild(overlay);
+            overlay.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="yolo.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="games.html">Games</a>
+        <a href="apps.html">apps</a>
+        
+    </header>
+    <h1 style="text-align: center;">Open Link</h1>
+    <button onclick="openLink()">Open Link</button>
+
+</body>
+</html>
