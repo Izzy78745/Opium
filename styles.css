@@ -1,17 +1,19 @@
+/* Original styles */
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: "Comic Sans MS", cursive;
-    background-color: #001220;
+    font-family: 'Poppins';
+    background-color: #16141b;
     color: white;
     margin: 0;
 }
 
 .curve {
-    position: absolute;
+    position: relative;
     height: 225px;
     width: 100%;
     bottom: 0;
@@ -25,6 +27,11 @@ header {
     position: absolute;
     top: 0;
 }
+.tralala {
+    font-size: 50px;
+    position: relative;
+    top: 50px;
+}
 
 header a {
     margin: 0 10px;
@@ -32,24 +39,89 @@ header a {
     text-decoration: none;
 }
 
-button {
-    padding: 12px 24px;
+.q {
+    padding: 12px 70px;
     border-radius: 50px;
     font-size: 16px;
     font-weight: bold;
     color: var(white);
     border-style: solid;
-    border-color: rgb(55, 5, 136);
+    border-color: rgb(48, 45, 51);
     border-width: 5px;
     cursor: pointer;
     margin-top: 60px;
+    font-family: 'Poppins';
+    transition: all 0.5s;
+    top: -700px;
+}
 
+.black{
+    padding: 12px 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(white);
+    border-style: solid;
+    border-color: rgb(48, 45, 51);
+    border-width: 5px;
+    cursor: pointer;
+    margin-top: 60px;
+    font-family: 'Poppins';
+    transition: all 0.5s;
+}
+.bblack {
+    position:relative;
+    left: 640px;
+    bottom:-87px;
+    padding: 12px 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(white);
+    border-style: solid;
+    border-color: rgb(48, 45, 51);
+    border-width: 5px;
+    cursor: pointer;
+    margin-top: 60px;
+    font-family: 'Poppins';
+    transition: all 0.5s;
+}
+.button2 {
+    position: relative;
+    padding: 4px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666668;
+    border-style: solid;
+    background-color: #16141b;
+    border-color: rgb(48, 45, 51);
+    border-width: 5px;
+    cursor: pointer;
+    margin-top: 60px;
+    font-family: 'Poppins';
+    transition: all 0.5s;
+}
+
+a {
+    padding: 4px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666668;
+    border-style: solid;
+    background-color: #16141b;
+    border-color: rgb(48, 45, 51);
+    border-width: 5px;
+    cursor: pointer;
+    margin-top: 60px;
+    font-family: 'Poppins';
     transition: all 0.5s;
 }
 
 button:hover{
     transform: translateY(-10px);
-    background-color:rgb(64, 3, 161);
+    background-color:rgb(57, 53, 65);
 }
 
 section {
@@ -85,4 +157,16 @@ section {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+/* Media queries to scale elements */
+
+/* For screens larger than 1366px */
+@media (min-width: 1366px) {
+    .curve {
+        height: 300px;
+    }
+    .tralala {
+        font-size: 70px;
+    }
 }
