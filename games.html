@@ -1,29 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Classes</title>
-        <link rel="icon" type="image/x-icon" href="assets/classroom.png"/>
-        <link rel="stylesheet" href="ui.css"/>
-    </head>
-    <body>
-        <div class="main">
-            <a href="index.html" class="ui-x circle">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc0cb" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg> 
-            </a>
-            </a>
-            </a>
-            <h1 style="text-decoration: underline;">Games</h1>
-            <a class="growth" href="lib/zelda.html">
-                <img class="growth" src="assets/zelda.png" width="150" height="150"/>
-            </a>
-            <a class="growth" href="lib/Fuchsia.html">
-                    <img class="growth" src="assets/fushia.png" width="150" height="150"/>
-            </a>
-            <a class="growth" href="lib/ruffle.html">
-                    <img class="growth" src="assets/ruffle.png" width="150" height="150"/>
-            
-        </div>
-    </body>
+<html>
+<head>
+  <script src="games.js"></script>
+  <link rel="stylesheet" href="LETSPLAY.css"></head>
+<body style="background-color: #09090b;">
+  <header>
+    <a href="yolo.html">AI</a>
+    <a href="apps.html">Apps</a>
+    <a href="index.html">Home</a>
+  </header>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+  <div class="main-container">
+    <div class="btnContainer" style="left: 120px; top: 90px;">
+      <h4>10 Minutes till Dawn<span class="hot">New!! <i class="fa-solid fa-fire" aria-hidden="true"></i></span></h4>
+      <p class="gameDescription">In this roguelite survival game, select from a variety of upgrades to create a unique and overpowered builds every run. Select Your Hero.</p>
+      <button class="btn" id="iframeBtn1">Play</button>
+    </div>
+    <div class="btnContainer" style="right: 120px; top: 90px;">
+      <h4>Discord<span class="hot">Popular <i class="fa-solid fa-fire" aria-hidden="true"></i></span></h4>
+      <p class="gameDescription">Discord is a communication platform designed for creating communities...</p>
+      <button class="btn" id="iframeBtn2">Play</button>
+    </div>
+    <div class="btnContainer" style="left: 120px; top: 300px;">
+      <h4>Discord<span class="hot">Popular <i class="fa-solid fa-fire" aria-hidden="true"></i></span></h4>
+      <p class="gameDescription">Discord is a communication platform designed for creating communities...</p>
+      <button class="btn" id="iframeBtn1">Play</button>
+    </div>
+    <br>
+    <div class="btnContainer" style="right: 120px; top: 300px;">
+      <h4>Discord<span class="hot">Popular <i class="fa-solid fa-fire" aria-hidden="true"></i></span></h4>
+      <p class="gameDescription">Discord is a communication platform designed for creating communities...</p>
+      <button class="btn" id="iframeBtn1">Play</button>
+    </div>
+    <br>
+    <div class="btnContainer" style="left: 120px; top: 510px; size: 100%;">
+      <h4>Tiktok<span class="hot">New <i class="fa-solid fa-fire" aria-hidden="true"></i></span></h4>
+      <p class="gameDescription">TikTok is a popular social media app where users can create and share short videos...</p>
+      <button class="btn" id="iframeBtn2">Play</button>
+    </div>
+    <div class="btnContainer" style="right: 120px; top: 510px;">
+      <h4>Tiktok<span class="hot">New <i class="fa-solid fa-fire" aria-hidden="true"></i></span></h4>
+      <p class="gameDescription">TikTok is a popular social media app where users can create and share short videos...</p>
+      <button class="btn" id="iframeBtn2">Play</button>
+    </div>
+  </div>
+
+  <div id="iframeOverlay">
+    <div class="close-btn" id="closeBtn">&times;</div>
+    <iframe id="iframeContent" src=""></iframe>
+  </div>
+<script>
+    document.getElementById("iframeBtn1").addEventListener("click", redirectFunction1);
+    document.getElementById("iframeBtn2").addEventListener("click", redirectFunction2);
+</script>
+
+</body>
 </html>
